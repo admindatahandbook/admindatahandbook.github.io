@@ -64,43 +64,40 @@ body {
  background-color: #1e2d56;
 }
 
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'menu main main right'
+    'menu footer footer right ';
+
+  background-color: #1e2d56;
+  padding: 0;
+}
+
+.grid-container > div {
+  background-color: #1e2d56;
+  text-align: center;
+  padding: 2px 0;
+  font-size: 20px;
+}
 img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 </style>
 </head>
 <body class="has_site_logo">
-
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="#">Handbook on Using Administrative Data for Research and Evidence-based Policy</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-            <li><a href="book/">Read online</a></li>
-            <li><a href="https://www.amazon.com/?isbn=xxx">Purchase</a></li>
-            <li><a href="book.pdf">Print</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://www.povertyactionlab.org"><span class="glyphicon glyphicon-home"></span>J-PAL</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-    
-
-<div class="container-fluid">
-	<div class="row">
-    <div class="col-lg-4 col-sm-2"></div>
-    <div class="col-sm-12 col-sm-8 col-lg-4"><img src="cover.png" /></div>
-<div class="col-lg-4 col-sm-2"></div>
+<div class="grid-container">
+	<div class="main">
+	<img src="cover.png" />
+</div>
 </div>
 </body>
 </html>
