@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Handbook on Using Administrative Data for Research and Evidence-based Policy</title>
+	<title>{{ page.title }} - Handbook on Using Administrative Data for Research and Evidence-based Policy</title>
 
 	
 <meta name="generator" content="manual">
@@ -41,13 +41,13 @@
 <meta name="DC.Format" scheme="IMT" content="application/pdf"/>
 <meta name="DC.Identifier" content="1"/>
 <meta name="DC.Identifier.DOI" content="10.29xxx/xxxxx"/>
-<meta name="DC.Identifier.URI" content="https://admindatahandbook.mit.edu/"/>
+<meta name="DC.Identifier.URI" content="https://handbook.mit.edu/"/>
 <meta name="DC.Language" scheme="ISO639-1" content="en"/>
 <meta name="DC.Rights" content="Copyright (c) 2020 Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"/>
 <meta name="DC.Rights" content="http://creativecommons.org/licenses/by-nc-nd/4.0"/>
 <meta name="DC.Source" content="MIT J-PAL"/>
 <meta name="DC.Source.ISBN" content="2575-xxxx"/>
-<meta name="DC.Source.URI" content="https://admindatahandbook.mit.edu"/>
+<meta name="DC.Source.URI" content="https://handbook.mit.edu"/>
 <meta name="DC.Subject" xml:lang="en" content="Administrative Data"/>
 <meta name="DC.Subject" xml:lang="en" content="Handbook"/>
 <meta name="DC.Subject" xml:lang="en" content="Access"/>
@@ -58,50 +58,32 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<style>
-body {
- /* background-image: url("cover.png");*/
- background-color: #1e2d56;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-</style>
+<link rel="stylesheet" href="{{ site.url }}/css/site.css">
 </head>
 <body class="has_site_logo">
 
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="index.html">Handbook on Using Administrative Data for Research and Evidence-based Policy</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="/coming-soon.html">Read online</a></li>
-          <li><a href="/ebook/">Ebook</a></li>
-          <li><a href="/purchase/">Purchase</a></li>
-          <li><a href="/coming-soon.html">Print</a></li>
-      </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://www.povertyactionlab.org"><span class="glyphicon glyphicon-home"></span>J-PAL</a></li>
-        </ul>
-      </div>
+      {% include menuleft.html %}
+      {% include menuback.html %}
     </div>
   </nav>
     
 
 <div class="container-fluid">
-	<div class="row">
-    <div class="col-lg-4 col-sm-2"></div>
-    <div class="col-sm-12 col-sm-8 col-lg-4"><h1 style="color:white;text-align:center;">Coming Soon</h1></div>
-<div class="col-lg-4 col-sm-2"></div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>{{ page.title }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-2"></div>
+    <div class="col-xs-12  col-md-8 col-lg-4">
+      {{ content }}
+    </div>
+    <div class="col-lg-4 col-md-2"></div>
+  </div>
+  
 </div>
 </body>
 </html>
