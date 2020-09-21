@@ -74,24 +74,9 @@ img {
 
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="#">Handbook on Using Administrative Data for Research and Evidence-based Policy</a>
-      </div>
-      <ul class="nav navbar-nav">
-          <li class="active"><a href="/">Back</a></li>
-          <li><a href="/ebook/">Ebook</a></li>
-          <li><a href="/purchase/">Purchase</a></li>
-          <li><a href="/coming-soon.html">Print</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://www.povertyactionlab.org"><span class="glyphicon glyphicon-home"></span>J-PAL</a></li>
-      </ul>
-      </div>
+      {% include menuleft.html %}
+      {% include navfull.html %}
+      {% include menuright.html %}
     </div>
   </nav>
     
