@@ -1,5 +1,5 @@
 ---
-title: Book version
+title: Printed version
 layout: default
 ---
 
