@@ -3,10 +3,34 @@ title: Ebook version
 layout: default
 ---
 
-A free ebook will be downloadable soon!
+An ebook will be available soon from Amazon, iBooks, etc., at a nominal cost.
 
-A test version can be downloaded in [epub](/book/latest/handbook.epub) or [Kindle (azw3)](/book/latest/handbook.azw3) format. Note that these are currently known *not* to work in Google Books. We suggest i
+Users can also download ebook versions from this page for free. 
+
+## Test versions
+
+A test version can be downloaded in various formats:
+
+- [epub](/book/testing/handbook.epub) 
+- [Kindle (azw3)](/book/testing/handbook.azw3) 
+- [Kindle (mobi)](/book/testing/handbook.mobi)
+
+## Readers
+
+- General
+  - [Google Play Books](https://play.google.com/books)
+  - Other online platforms
+
+- Apple
+  - iBooks
 
 - Android
   - [Moon+ Reader](https://play.google.com/store/apps/details?id=com.flyersoft.moonreader)
   - [FBReader](https://play.google.com/store/apps/details?id=com.flyersoft.moonreader) 
+
+## How to upload
+
+You can upload free ebooks through a variety of ways. Your tablet or ebook reader might automatically do the right thing when clicking on the links above. Other guidance:
+
+- [How to upload books to Google Play Books](https://support.google.com/googleplay/answer/185545)
+- [Sending to Kindle by E-mail](https://www.amazon.com/gp/sendtokindle/email)

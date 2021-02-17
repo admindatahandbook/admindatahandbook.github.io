@@ -1,6 +1,6 @@
 ---
 title: PDF version
-layout: default
+layout: main
 ---
 
 A printable PDF version of the Handbook will be available soon.

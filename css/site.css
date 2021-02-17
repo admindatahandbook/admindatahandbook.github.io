@@ -2,9 +2,12 @@ body {
  /* background-image: url("cover.png");*/
  background-color: #1e2d56;
  color:white;
- text-align:center;
+ text-align: left;
 }
 
+.title {
+  text-align: center
+}
 img {
   width: 100%;
   height: auto;
