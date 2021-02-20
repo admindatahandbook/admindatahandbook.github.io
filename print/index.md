@@ -1,7 +1,9 @@
 ---
 title: PDF version
-layout: main
+layout: print
 ---
 
-A <a href="{{ site.book.version }}/{{ site.book.pdf }}" alt="pdf">printable PDF version</a> of the Handbook will be available soon.
+<!-- The content above comes from parsing _data/book.yml with _layout/print.html -->
+
+Note: The title page and the last page of the PDF are full color. Please verify before printing. You can also [purchase a printed copy](/purchase/) of the book instead of printing.
 

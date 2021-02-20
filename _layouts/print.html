@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
+<head>
+{% include ganalytics.html %}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Handbook on Using Administrative Data for Research and Evidence-based Policy</title>
+
+<meta name="google-site-verification" content="7cc-N13BzBc76BsPT31oLdd-w4uo9LkRtTZxBUQtltM" />	
+<meta name="generator" content="manual">
+<link rel="shortcut icon" href="https://www.povertyactionlab.org//themes/custom/jpal/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="gs_meta_revision" content="1.1"/>
+{% include metadc.html %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="{{ site.url }}/css/site.css">
+</head>
+<body class="has_site_logo">
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      {% include menuleft.html %}
+      {% include navfull.html %}
+      {% include menuright.html %}
+    </div>
+  </nav>
+    
+
+<div class="container-fluid title">
+    <div class="row">
+        <div class="col-lg-4 col-md-2"></div>
+        <div class="col-xs-12  col-md-8 col-lg-4">
+    
+        Complete handbook for printing: <span class="download pdf book"><a href="{{ site.data.book.version }}/{{ site.data.book.pdf }}">Download</a></span>
+
+        </div>
+        <div class="col-lg-4 col-md-2"></div>
+    </div>
+    <!-- for small screens only -->
+    <div class="row">
+        <div class="col-xs-12">
+         Individual chapters for printing:
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-1"></div>
+        <div class="col-md-4 col-lg-2"> <!-- for larger screens only -->
+            Individual chapters for printing:
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-6"> <!-- for all screens -->
+            <ul>
+            {% for chapter in site.data.book.chapters %}
+            <li>
+                <a href="{{ chapter.version }}/{{ chapter.pdf }}" alt="Download of {{ chapter.name }}">{{ chapter.name }}</a>
+            </li>
+        </div>
+        <div class="col-lg-2 col-md-1"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-2"></div>
+        <div class="col-xs-12  col-md-8 col-lg-4">
+         {{ content }}
+        </div>
+        <div class="col-lg-4 col-md-2"></div>
+    </div>
+        
+</div>
+</body>
+</html>
