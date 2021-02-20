@@ -12,3 +12,9 @@ img {
   width: 100%;
   height: auto;
 }
+
+.navbar-fixed-bottom {
+  font-size: smaller;
+  color: dimgray;
+  font-style: italic;
+}
