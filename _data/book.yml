@@ -1,0 +1,83 @@
+pdf: handbook_print.pdf
+version: v1.0
+chapters:
+  - type: chapter
+    name: Introduction
+    pdf: handbook_ch1_Introduction.pdf
+    number: 1 
+    version: v1.0
+  - type: chapter
+    name: Physical-protection
+    pdf: handbook_ch2_Physical-protection.pdf
+    number: 2 
+    version: v1.0
+  - type: chapter
+    name: DUA
+    pdf: handbook_ch3_DUA.pdf
+    number: 3 
+    version: v1.0
+  - type: chapter
+    name: IRB
+    pdf: handbook_ch4_IRB.pdf
+    number: 4 
+    version: v1.0
+  - type: chapter
+    name: SDL
+    pdf: handbook_ch5_SDL.pdf
+    number: 5 
+    version: v1.0
+  - type: chapter
+    name: DP
+    pdf: handbook_ch6_DP.pdf
+    number: 6 
+    version: v1.0
+  - type: chapter
+    name: IAB
+    pdf: handbook_ch7_IAB.pdf
+    number: 7 
+    version: v1.0
+  - type: chapter
+    name: OLDA
+    pdf: handbook_ch8_OLDA.pdf
+    number: 8 
+    version: v1.0
+  - type: chapter
+    name: NB-IRDT
+    pdf: handbook_ch9_NB-IRDT.pdf
+    number: 9 
+    version: v1.0
+  - type: chapter
+    name: PCRI
+    pdf: handbook_ch10_PCRI.pdf
+    number: 10 
+    version: v1.0
+  - type: chapter
+    name: Aurora
+    pdf: handbook_ch11_Aurora.pdf
+    number: 11 
+    version: v1.0
+  - type: chapter
+    name: S-SFUSD
+    pdf: handbook_ch12_S-SFUSD.pdf
+    number: 12 
+    version: v1.0
+  - type: chapter
+    name: Cape-Town
+    pdf: handbook_ch13_Cape-Town.pdf
+    number: 13 
+    version: v1.0
+  - type: chapter
+    name: DIME
+    pdf: handbook_ch14_DIME.pdf
+    number: 14 
+    version: v1.0
+  - type: chapter
+    name: IMF
+    pdf: handbook_ch15_IMF.pdf
+    number: 15 
+    version: v1.0
+  - type: chapter
+    name: Indonesia
+    pdf: handbook_ch16_Indonesia.pdf
+    number: 16 
+    version: v1.0
