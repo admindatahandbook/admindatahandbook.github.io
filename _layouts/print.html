@@ -37,23 +37,25 @@
       
     <div class="row">
         <div class="col-lg-4 col-md-2"></div>
-        <div class="col-xs-12  col-md-8 col-lg-4">
-    
-        Complete handbook for printing: <span class="download pdf book"><a href="{{ site.data.book.version }}/{{ site.data.book.pdf }}">Download</a></span>
+        <div class="col-xs-4 col-md-2 col-lg-1"> 
+            Complete handbook for printing: 
+        </div>
+        <div class="col-xs-8 col-md-6 col-lg-3">
+            <span class="download pdf book"><a href="{{ site.data.book.version }}/{{ site.data.book.pdf }}">Download</a></span>
 
         </div>
         <div class="col-lg-4 col-md-2"></div>
     </div>
     <div class="row">
         <div class="col-lg-4 col-md-2"></div>
-        <div class="col-xs-4 col-md-4 col-lg-2"> 
+        <div class="col-xs-4 col-md-2 col-lg-1"> 
             Individual chapters for printing:
         </div>
-        <div class="col-xs-8 col-md-6 col-lg-2"> <!-- for all screens -->
+        <div class="col-xs-8 col-md-6 col-lg-3"> <!-- for all screens -->
             <ul>
             {% for chapter in site.data.book.chapters %}
             <li>
-                <a href="{{ chapter.version }}/{{ chapter.pdf }}" alt="Download of {{ chapter.name }}">{{ chapter.name }}</a>
+                <span class="download pdf book"><a href="{{ chapter.version }}/{{ chapter.pdf }}" alt="Download of {{ chapter.name }}">{{ chapter.name }}</a></span>
             </li>
             {% endfor %}
             </ul>

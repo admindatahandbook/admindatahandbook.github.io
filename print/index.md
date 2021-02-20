@@ -1,5 +1,5 @@
 ---
-title: PDF version
+title: Printable PDF version
 layout: print
 ---
 
