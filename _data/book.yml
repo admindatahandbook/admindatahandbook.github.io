@@ -1,6 +1,10 @@
 pdf: handbook_print.pdf
 version: v1.0
 chapters:
+  - type: foreword
+    name: Foreword
+    pdf: handbook_ch0_Foreword.pdf
+    version: v1.0
   - type: chapter
     name: Introduction
     pdf: handbook_ch1_Introduction.pdf
