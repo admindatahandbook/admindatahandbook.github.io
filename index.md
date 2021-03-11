@@ -3,4 +3,6 @@ title: Index
 layout: main
 ---
 
-<img src="webcover.png" />
+<img src="webcover-front.png" />
+
+<img src="webcover-back.png">

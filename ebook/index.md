@@ -3,17 +3,22 @@ title: Ebook version
 layout: default
 ---
 
-An ebook will be available soon from Amazon, iBooks, etc., at a nominal cost.
+An ebook, formatted for most ebook readers, is available.
 
-Users can also download ebook versions from this page for free. 
+## Purchase the ebook
 
-## Test versions
+For convenience, the ebook can be purchased for a nominal cost from
 
-A test version can be downloaded in various formats:
+- [Amazon](https://www.amazon.com/Handbook-Administrative-Research-Evidence-based-Policy-ebook/dp/B08XSHGRW8)
+- Apple Books
 
-- [epub](/book/testing/handbook.epub) 
-- [Kindle (azw3)](/book/testing/handbook.azw3) 
-- [Kindle (mobi)](/book/testing/handbook.mobi)
+## Free versions
+
+Users can also download ebook versions from this page for free. The content is identical. We provide instructions on how to load these into some ebook readers below.
+
+- [epub format](/ebook/v1.0/handbook.epub) 
+- [Kindle (azw3) format](/ebook/v1.0/handbook.azw3) 
+- [Kindle (mobi) format](/ebook/v1.0/handbook.mobi)
 
 ## Readers
 
@@ -22,15 +27,15 @@ A test version can be downloaded in various formats:
   - Other online platforms
 
 - Apple
-  - iBooks
+  - [Apple Books](https://books.apple.com/ca/genre/books/id38)
 
 - Android
   - [Moon+ Reader](https://play.google.com/store/apps/details?id=com.flyersoft.moonreader)
   - [FBReader](https://play.google.com/store/apps/details?id=com.flyersoft.moonreader) 
 
-## How to upload
+## How to upload to ebook readers
 
-You can upload free ebooks through a variety of ways. Your tablet or ebook reader might automatically do the right thing when clicking on the links above. Other guidance:
+You can upload free ebooks in a variety of ways. Your tablet or ebook reader might automatically do the right thing when clicking on the links above. Other guidance:
 
 - [How to upload books to Google Play Books](https://support.google.com/googleplay/answer/185545)
 - [Sending to Kindle by E-mail](https://www.amazon.com/gp/sendtokindle/email)
