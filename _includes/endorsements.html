@@ -1,0 +1,37 @@
+<!-- endorsements Section -->
+<section id="endorsements">
+    <div class="content-section  color-even">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>        
+              <h2 class="section-heading">Reception of the Handbook</h2>
+            </div>
+        </div> 
+                
+<!-- Page Content -->
+            {% for endorsement in site.endorsements  %}
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+              {% if thecycle == 'odd' %}
+              <div class="row">
+                <div class="col-lg-4 col-lg-offset-2 col-sm-6">
+                    <div class="quote">{{ endorsement.content }}</div>
+                    <blockquote class="blockquote mb-0">
+                        {{ endorsement.author }} <cite class="endorsement" title="Source Title">{{ endorsement.affiliation }}</cite>
+                    </blockquote>
+                </div>
+            {% else %}
+                <div class="col-lg-4 col-sm-6">
+                    <div class="quote">{{ endorsement.content }}</div>
+                    <blockquote class="blockquote mb-0">{{ endorsement.author }} <cite class="endorsement" title="Source Title">{{ endorsement.affiliation }}</cite>
+                    </blockquote>
+                </div>
+            </div><!-- end row-->
+            {% endif %}
+            {% endfor %}
+        </div><!-- /.container -->
+    </div>
+    <!-- /.content-section -->
+</section>
+

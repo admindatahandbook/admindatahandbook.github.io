@@ -1,0 +1,69 @@
+<section id="read">
+<!-- Page Content -->
+{% for post in site.posts reversed %}
+  {% capture thepost %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thepost == 'odd' %}
+    {% if post.target %}        
+    <div class="content-section-a color-odd"  id="{{ post.target }}">
+    {% else %}
+    <div class="content-section-a">
+    {% endif %}
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2 col-sm-6">
+                    <div class="lead">{{ post.content }}</div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <img class="img-responsive img-post" src="img/{{ post.img }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+    {% else %}
+
+    {% if post.target %}        
+    <div class="content-section-b color-even"  id="{{ post.target }}">
+    {% else %}
+    <div class="content-section-b">
+    {% endif %}
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>        
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-push-6  col-sm-6">
+                    <div class="lead">{{ post.content }}</div>
+                </div>
+                <div class="col-lg-4 col-lg-offset-4 col-sm-pull-6  col-sm-6 even-row">
+                  <img class="img-responsive img-post" src="img/{{ post.img }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+    {% endif %}
+{% endfor %}
+</section>

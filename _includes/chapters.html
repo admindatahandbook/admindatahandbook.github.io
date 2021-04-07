@@ -1,0 +1,54 @@
+<!-- Chapters Section -->
+<section id="print">
+    <!-- continue the cycle from just before -->
+    {% if thecyle == 'odd' %}{% assign thecyle = 'even' %}
+    {% else %}{% assign thecycle = 'odd' %}
+    {% endif %}
+
+    {% if thecyle == 'odd' %}
+    <div  class="content-section-a color-odd">
+    {% else %}
+    <div  class="content-section-b color-even">
+    {% endif %}
+        <div  class="container">
+            <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>        
+              <h2 class="section-heading">Chapter Overview</h2>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+              <p>Read or print individual chapters, or view its presentation by one of the authors.
+                To print the entire Handbook, download the <a href="https://admindatahandbook.mit.edu/print/v1.0/handbook_print.pdf">complete version</a> <b>(617 pages)</b>.
+              </p>
+            </div>
+        </div> 
+                
+<!-- Page Content -->
+{% for chapter in site.chapters  %}
+
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-2 col-sm-6">
+                    <div class="lead"><span class="chapter-title">{{ chapter.title }}</span><br/>
+                        <span class="chapter-author">({{ chapter.authors }})</span><br/>
+                        <span class="chapter-content">{{ chapter.content }}</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <ul class="fa fa-ul">
+                        <li class="fa-globe"><span class="chapter-links"><a href="{{ site.url }}/book/{{ chapter.onlineversion }}/{{ chapter.onlinefile }}.html">Read online</a></span></li>
+                        <li class="fa-file-pdf-o"><span class="chapter-links"><a href="{{ site.url }}/print/{{ chapter.printversion }}/{{ chapter.printfile }}.pdf">Print</a></span></li>
+                        {% if chapter.webinarurl %}
+                        <li class="fa-youtube-play"><span class="chapter-links"><a href="{{ chapter.webinarurl }}">View Webinar</a></span></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+
+            {% endfor %}
+        </div>
+        <!-- /.container -->
+    </div>
+</section>

@@ -1,1 +1,59 @@
-url: https://admindatahandbook.github.io
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: https://admindatahandbook.mit.edu
+title: Handbook on Using Administrative Data for Research and Evidence-based Policy
+email: 
+date: 2021-01-01
+modified-date: 2021-01-01
+doi: 10.31485/admindatahandbook.1.0
+pdf-link: https://admindatahandbook.mit.edu/print/v1.0/handbook_print.pdf
+isbn-book: 978-1-7360216-0-6
+isbn-epub: 978-1-7360216-1-3
+author: 
+  - Shawn Cole
+  - Iqbal Dhaliwal
+  - Anja Sautmann
+  - Lars Vilhuber
+description: > # "Write an awesome description for your new site here. 
+  The Handbook serves as a go-to reference for researchers seeking to use administrative data and for data providers looking to make their data accessible for research. The handbook is published online under an open licensing model and freely available to all. It provides information, best practices, and case studies on how to create privacy-protected access to, handle, and analyze administrative data, with the aim of pushing the research frontier as well as informing evidence-based policy innovations.
+copyright: 'Copyright &copy; 2020 Cole, Dhaliwal, Sautmann, Vilhuber.
+Individual chapters &copy; by their authors or as noted. '
+credits: 'Funding provided the Alfred P. Sloan Foundation.'
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+social:
+  - title: IDEA
+    icon: home
+    url: https://www.povertyactionlab.org/initiative/innovations-data-and-experiments-action-initiative 
+  - title: twitter
+    url: https://twitter.com/jpal
+  - title: github
+    url: https://github.com/admindatahandbook
+
+collections:
+  - chapters
+  - endorsements
+
+
+navigation:
+  - title: About
+    url: "#about"
+  - title: Read
+    url: "#online"
+  - title: Purchase
+    url: "#purchase"
+  - title: Print 
+    url:  "#print"

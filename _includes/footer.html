@@ -1,0 +1,31 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 text-muted small">
+                {% include maintained.html %}
+            </div>
+            <div class="col-md-6">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#home">Top</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    {% for item in site.navigation %}
+                    <li>
+                        <a href="{{ item.url }}">{{ item.title }}</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    {% endfor %}
+                    <li>
+                        <a href="#more">More</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">{{ site.copyright }}</p>
+            </div>
+            <div class="col-md-3 text-muted small">
+                {% include funding.html %}
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,46 +1,16 @@
 <!DOCTYPE html>
-<html lang="en-US" xml:lang="en-US">
-<head>
-{% include ganalytics.html %}
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ page.title }} - Handbook on Using Administrative Data for Research and Evidence-based Policy</title>
-
+<html>
+	<!-- Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>. -->
+	{% include head.html %}
 	
-<meta name="generator" content="manual">
-<link rel="shortcut icon" href="https://www.povertyactionlab.org//themes/custom/jpal/favicon.ico" type="image/vnd.microsoft.icon" />
-<meta name="gs_meta_revision" content="1.1"/>
-{% include metadc.html %}
-<link rel="stylesheet" href="{{ site.url }}/css/bootstrap.min.css">
-<script src="{{ site.url }}/assets/js/jquery.min.js"></script>
-<script src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
-
-<link rel="stylesheet" href="{{ site.url }}/css/site.css">
-</head>
-<body class="has_site_logo">
-
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      {% include menuleft.html %}
-      {% include menuback.html %}
-    </div>
-  </nav>
-    
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-12 title">
-      <h1>{{ page.title }}</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-4 col-md-2"></div>
-    <div class="col-xs-12  col-md-8 col-lg-4">
-      {{ content }}
-    </div>
-    <div class="col-lg-4 col-md-2"></div>
-  </div>
-  
-</div>
-</body>
+	<body>
+		{% include header.html %}
+		{% include about.html %}
+		{% include endorsements.html %}
+		{% include page_content.html %}
+		{% include chapters.html %}
+		{% include contact.html %}
+		{% include footer.html %}
+		{% include js.html %}
+	</body>
 </html>
