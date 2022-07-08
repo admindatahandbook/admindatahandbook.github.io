@@ -9,10 +9,10 @@ description: |
 ---
   Purchase a version for your Ebook reader:
   <ul>
-  <li><a href="https://www.amazon.com/Handbook-Administrative-Research-Evidence-based-Policy-ebook/dp/B08XSHGRW8/ref=sr_1_2?dchild=1&keywords=handbook+on+administrative&qid=1615822555&sr=8-2">Purchase the Kindle version</a></li>
-  <li><a href="https://books.apple.com/us/book/handbook-on-using-administrative-data-for-research/id1556124899">Purchase on Apple Books</a></li>
+  <li><a href="https://www.amazon.com/Handbook-Administrative-Research-Evidence-based-Policy-ebook/dp/B08XSHGRW8/ref=sr_1_2?dchild=1&keywords=handbook+on+administrative&qid=1615822555&sr=8-2">Purchase the Kindle version</a> (Version {{ site.isbn-version }})</li>
+  <li><a href="https://books.apple.com/us/book/handbook-on-using-administrative-data-for-research/id1556124899">Purchase on Apple Books</a> (Version {{ site.isbn-version }})</li>
   </ul>
-  or obtain a FREE version (works for some devices, identical to purchased version), by choosing the appropriate format:
+  or obtain a FREE version (works for some devices, version {{ site.ebook-version}} available), by choosing the appropriate format:
   <ul>
   <li><a href="https://admindatahandbook.mit.edu/ebook/v1.0/handbook.epub">Epub format</a> (works for most users)</li>
   <li><a href="https://admindatahandbook.mit.edu/ebook/v1.0/handbook.azw3">Kindle (azw3) format</a></li>

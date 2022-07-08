@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3">
               <p>Read or print individual chapters, or view its presentation by one of the authors.
-                To print the entire Handbook, download the <a href="https://admindatahandbook.mit.edu/print/v1.0/handbook_print.pdf">complete version</a> <b>(617 pages)</b>.
+                To print the entire Handbook, download the <a href="https://admindatahandbook.mit.edu/print/{{ site.version }}/handbook_print.pdf">complete version</a> <b>({{ site.version }}, 617 pages)</b>.
               </p>
             </div>
         </div> 
@@ -29,7 +29,7 @@
 <!-- Page Content -->
 {% for chapter in site.chapters  %}
 
-            <div class="row">
+            <div class="row" id="{{ chapter.onlinefile }}">
                 <div class="col-lg-6 col-lg-offset-2 col-sm-6">
                     <div class="lead"><span class="chapter-title">{{ chapter.title }}</span><br/>
                         <span class="chapter-author">({{ chapter.authors }})</span><br/>
@@ -39,10 +39,15 @@
                 <div class="col-lg-3 col-sm-6">
                     <ul class="fa fa-ul">
                         <li class="fa-globe"><span class="chapter-links"><a href="{{ site.url }}/book/{{ chapter.onlineversion }}/{{ chapter.onlinefile }}.html">Read online</a></span></li>
+                        {% if chapter.printfile %}
                         <li class="fa-file-pdf-o"><span class="chapter-links"><a href="{{ site.url }}/print/{{ chapter.printversion }}/{{ chapter.printfile }}.pdf">Print</a></span></li>
+                        {% else %}
+                        <li class="fa-ban"><span class="chapter-links">(online only)</span></li>
+                        {% endif %}
                         {% if chapter.webinarurl %}
                         <li class="fa-youtube-play"><span class="chapter-links"><a href="{{ chapter.webinarurl }}">View Webinar</a></span></li>
                         {% endif %}
+                        <li class="fa-clock-o"><span class="chapter-links">{{ chapter.onlineversion }}</span></li>
                     </ul>
                 </div>
             </div>

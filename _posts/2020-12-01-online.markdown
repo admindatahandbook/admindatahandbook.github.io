@@ -6,4 +6,4 @@ category: Services
 title: Read online
 description: |
 ---
-  Read the full Handbook for FREE <a href="https://admindatahandbook.mit.edu/book/">online</a> at <a href="https://admindatahandbook.mit.edu/book/">https://admindatahandbook.mit.edu/book/</a>. You can also download <a class="page-scroll" href="#epub">ebook versions</a>.
+  Read the full Handbook for FREE <a href="https://admindatahandbook.mit.edu/book/">online</a> at <a href="https://admindatahandbook.mit.edu/book/">https://admindatahandbook.mit.edu/book/</a>  ({{ site.version }}). You can also download <a class="page-scroll" href="#epub">ebook versions ({{ site.ebook-version }})</a>.
