@@ -1,7 +1,7 @@
 ---
 layout: default
 category: case-study
-title: "Challenges to Administrative Data in Puerto Rico during COVID-19"
+title: "Using Administrative Data To Supplement Standardized Testing In Schools During Covid-19 In Puerto Rico"
 authors: Daniela Gómez Treviño
 printfile: 
 printversion: 
